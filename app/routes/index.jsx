@@ -1,12 +1,12 @@
-import { Link } from '@remix-run/react';
-import homeStyles from '~/styles/home.css';
+import { Link } from "@remix-run/react";
+import homeStyles from "~/styles/home.css";
 
 export function links() {
   return [
     {
-      rel: 'stylesheet',
-      href: homeStyles
-    }
+      rel: "stylesheet",
+      href: homeStyles,
+    },
   ];
 }
 
