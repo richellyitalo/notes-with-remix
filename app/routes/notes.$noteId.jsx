@@ -13,7 +13,7 @@ export function links() {
 }
 
 export function meta({data}) {
-    return {
+    return data?.title && {
         title: data.title
     }
 }

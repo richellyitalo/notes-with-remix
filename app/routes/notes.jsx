@@ -18,11 +18,6 @@ export default function NotesPage () {
 export async function action (data) {
   const formData = await data.request.formData();
 
-  // Simulate delay
-  // await new Promise((resolve, reject) => {
-  //   setTimeout(() => resolve(), 2000);
-  // })
-
   // const noteData = {
   //     title: formData.get('title'),
   //     content: formData.get('content'),
