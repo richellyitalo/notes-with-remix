@@ -12,9 +12,15 @@ export function links() {
     ]
 }
 
+export function meta({data}) {
+    return {
+        title: data.title
+    }
+}
+
 export async function loader ({ params }) {
     const noteId = parseInt(params.noteId);
-    const note = await getNoteById(noteId)
+    const note = await getNoteById(noteId);
     
     if (!note) {
         throw json(
