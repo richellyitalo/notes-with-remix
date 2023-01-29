@@ -26,3 +26,9 @@ export async function addNote(noteData) {
 
   return updatedNotes;
 }
+
+export async function getNoteById(noteId) {
+  const notes = await getStoredNotes();
+  const note = notes.find((note) => note.id === noteId);
+  return note;
+}

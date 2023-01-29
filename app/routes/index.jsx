@@ -1,7 +1,8 @@
+import { json } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import homeStyles from "~/styles/home.css";
 
-export function links() {
+export function links () {
   return [
     {
       rel: "stylesheet",
@@ -10,7 +11,7 @@ export function links() {
   ];
 }
 
-export default function Index() {
+export default function Index () {
   return (
     <main id="content">
       <h1>A better way of keeping track of your notes</h1>
